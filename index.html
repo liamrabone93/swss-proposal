@@ -494,10 +494,10 @@
       <div>
         <h4>MetaMask API: ready to connect</h4>
         <p>
-          MetaMask's API is available and Milo is ready to connect. On-chain wallet data sits alongside
+          MetaMask's API connects directly into Milo. On-chain wallet data sits alongside
           Salesforce inside Milo from day one.
         </p>
-        <div class="sub">In-house tools scoped in the CTO meeting.</div>
+        <div class="sub">In-house tools scoped in the technical call.</div>
       </div>
     </div>
   </div>
@@ -548,151 +548,10 @@
           numbers say.</p>
       </div>
 
-      <div class="rcard reveal">
-        <div class="rcard-num">06 / PRICING</div>
-        <div class="rcard-title">Flat rate. No token cap.</div>
-        <p class="rcard-body">£1,500/month covers unlimited queries across every connected source — no per-query billing,
-          no usage limits. The commercials section below has the full breakdown.</p>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- queries -->
-<section class="queries">
-  <div class="container">
-    <span class="eyebrow purple">02 · Example queries</span>
-    <h2 class="section-title reveal">Questions Milo answers <span class="italic">across your stack.</span></h2>
-    <p class="section-lead reveal">
-      Eight examples based on the tools SWSS already uses. These run from day one — no setup required by your team.
-    </p>
-
-    <div class="query-grid">
-      <div class="query reveal">
-        <div class="query-num">1</div>
-        <div class="query-content">
-          <div class="query-q">Which Salesforce accounts have had the most activity this month — and which have gone quiet?</div>
-          <span class="query-tag">Salesforce · Pipeline</span>
-        </div>
-      </div>
-      <div class="query reveal">
-        <div class="query-num">2</div>
-        <div class="query-content">
-          <div class="query-q">Which Salesforce contacts also have active MetaMask wallet transactions in the last 30 days?</div>
-          <span class="query-tag">Salesforce · MetaMask</span>
-        </div>
-      </div>
-      <div class="query reveal">
-        <div class="query-num">3</div>
-        <div class="query-content">
-          <div class="query-q">How are tokens being spent across the team — which departments are spending most, and on what?</div>
-          <span class="query-tag">Internal · Token spend</span>
-        </div>
-      </div>
-      <div class="query reveal">
-        <div class="query-num">4</div>
-        <div class="query-content">
-          <div class="query-q">What does the internal finance tool show for this month vs. last — where are costs tracking above plan?</div>
-          <span class="query-tag">Finance · Internal</span>
-        </div>
-      </div>
-      <div class="query reveal">
-        <div class="query-num">5</div>
-        <div class="query-content">
-          <div class="query-q">Which wallet addresses in MetaMask have been inactive for 60+ days but had high early transaction volume?</div>
-          <span class="query-tag">MetaMask · Retention</span>
-        </div>
-      </div>
-      <div class="query reveal">
-        <div class="query-num">6</div>
-        <div class="query-content">
-          <div class="query-q">Which Slack and Telegram threads from the last two weeks generated the most replies or follow-up activity?</div>
-          <span class="query-tag">Comms · Slack · Telegram</span>
-        </div>
-      </div>
-      <div class="query reveal">
-        <div class="query-num">7</div>
-        <div class="query-content">
-          <div class="query-q">HR headcount by office (Malaysia, Dubai, UK) — how does it map against wallet and Salesforce activity by region?</div>
-          <span class="query-tag">HR · Internal · Regional</span>
-        </div>
-      </div>
-      <div class="query reveal">
-        <div class="query-num">8</div>
-        <div class="query-content">
-          <div class="query-q">Which WhatsApp conversations mention open Salesforce deals — and how long since the last follow-up?</div>
-          <span class="query-tag">WhatsApp · Salesforce</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- architecture -->
-<section class="arch">
-  <div class="container">
-    <span class="eyebrow">03 · How the connection works</span>
-    <h2 class="section-title reveal">One layer across <span class="italic">your entire stack.</span></h2>
-    <p class="section-lead reveal">
-      Milo sits on top of your existing tools. Nothing changes how your team uses them today.
-      We add a read layer and make everything queryable from one place.
-    </p>
-
-    <div class="arch-grid">
-      <div class="acard reveal">
-        <h4>Phase 1: Salesforce + MetaMask</h4>
-        <p>Start here. Both are ready to connect now. Salesforce via OAuth, MetaMask via its existing API.
-          Milo's technical team handles the integration — expect half a day to set up.</p>
-        <div class="flow">
-          <span class="flow-node">Salesforce</span>
-          <span class="flow-arrow">+</span>
-          <span class="flow-node accent">MetaMask API</span>
-          <span class="flow-arrow">→</span>
-          <span class="flow-node milo">Milo</span>
-        </div>
-      </div>
-
-      <div class="acard reveal">
-        <h4>Phase 2: Internal tools + comms</h4>
-        <p>Proprietary finance, HR, and wallet tools connect via REST API or direct database. Slack, Telegram,
-          and WhatsApp connect via their standard APIs. Scoped in a single technical call between teams.</p>
-        <div class="flow">
-          <span class="flow-node">Finance · HR · Wallets</span>
-          <span class="flow-arrow">+</span>
-          <span class="flow-node accent">Slack · TG · WA</span>
-          <span class="flow-arrow">→</span>
-          <span class="flow-node milo">Milo</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="compliance reveal">
-      <div class="compliance-label">
-        <span class="micro">Trust &amp; compliance</span>
-        <h4>Independently audited.</h4>
-        <p>Both certifications cover the infrastructure your tools would connect to. Full reports, policies,
-          and subprocessor list available at our trust portal.</p>
-        <a href="https://trust.milo.ai/" target="_blank" rel="noopener" class="trust-link">View trust.milo.ai →</a>
-      </div>
-      <div class="compliance-badges">
-        <div class="badge">
-          <div class="badge-mark"><span class="top">SOC 2</span><span class="bot">TYPE I</span></div>
-          <div>
-            <div class="badge-name">SOC 2 Type I</div>
-            <div class="badge-status">✓ Compliant</div>
-          </div>
-        </div>
-        <div class="badge">
-          <div class="badge-mark"><span class="top">ISO</span><span class="bot">27001</span></div>
-          <div>
-            <div class="badge-name">ISO 27001</div>
-            <div class="badge-status">✓ Compliant</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- token clarity -->
 <div class="token-callout">
@@ -704,67 +563,31 @@
     </p>
     <div class="token-grid">
       <div class="tcard reveal">
-        <h5>Trial</h5>
-        <div class="big">Free <small>· 7 days</small></div>
+        <h5>POC</h5>
+        <div class="big">£1,500 <small>· /month</small></div>
         <ul>
-          <li>Salesforce only</li>
-          <li>Run the queries above</li>
-          <li>No commitment, no fee</li>
-          <li>Unlimited queries during trial</li>
+          <li>Salesforce connected from day one</li>
+          <li>Whilst syncing, Milo integrates your remaining tools in parallel</li>
+          <li>No per-query billing, ever</li>
+          <li>All users across your team</li>
+          <li>Priced in GBP</li>
         </ul>
       </div>
       <div class="tcard highlight reveal">
-        <h5>Monthly contract</h5>
+        <h5>Full contract</h5>
         <div class="big">£1,500 <small>· /month</small></div>
         <ul>
-          <li>Unlimited queries — no token cap</li>
+          <li>All sources live — Salesforce, MetaMask, internal tools, comms</li>
           <li>No per-query billing, ever</li>
-          <li>All your connected sources included</li>
           <li>All users across your team</li>
-          <li>Priced in GBP · not SWSS Coin</li>
+          <li>6–12 month term</li>
+          <li>Priced in GBP</li>
         </ul>
       </div>
     </div>
   </div>
 </div>
 
-<!-- pricing -->
-<section class="pricing">
-  <div class="container">
-    <span class="eyebrow">05 · Commercials</span>
-    <h2 class="section-title reveal">Two stages. <span class="italic">Easy to stop.</span></h2>
-    <p class="section-lead reveal">
-      Each stage stands on its own. No pressure to proceed; every review point is explicit.
-    </p>
-    <div class="path-grid">
-      <div class="pcard stage-1 reveal">
-        <span class="stage-num">Stage 01 · Trial</span>
-        <h4>7-day trial</h4>
-        <div class="price">Free <small>· 7 days</small></div>
-        <ul>
-          <li>Salesforce · plug-and-play</li>
-          <li>8 agreed queries, run with you</li>
-          <li>NDA both ways</li>
-          <li>No fee, no commitment</li>
-        </ul>
-        <div class="stage-foot">→ Decide whether to move to contract</div>
-      </div>
-      <div class="pcard stage-3 reveal">
-        <span class="stage-num">Stage 02 · Contract</span>
-        <h4>Full contract</h4>
-        <div class="price">£1,500 <small>· per month</small></div>
-        <ul>
-          <li>6–12 month term</li>
-          <li>Unlimited queries · all users</li>
-          <li>Scheduled reports + ad-hoc analysis</li>
-          <li>Support via Slack, WhatsApp or Telegram</li>
-          <li>Reviewed at end of term</li>
-        </ul>
-        <div class="stage-foot">→ Reviewed at the end of your term</div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- next steps -->
 <section class="nextsteps">
@@ -799,19 +622,6 @@
   </div>
 </section>
 
-<!-- CTA -->
-<div class="cta">
-  <div class="cta-box">
-    <div>
-      <h3>Ready to get started?</h3>
-      <p>Get in touch to arrange the technical scoping call and kick off the 7-day trial on Salesforce.</p>
-    </div>
-    <div class="cta-actions">
-      <a href="mailto:liam@milo.ai" class="btn cyan">Get in touch →</a>
-      <a href="https://milo.ai" target="_blank" rel="noopener" class="btn cream">Learn more at milo.ai</a>
-    </div>
-  </div>
-</div>
 
 <!-- footer -->
 <footer>
