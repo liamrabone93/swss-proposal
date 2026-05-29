@@ -247,7 +247,7 @@
   .acard .flow { margin-top: 16px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
   .flow-node { padding: 7px 12px; background: var(--cream); border: 2px solid var(--dark); font-size: 12px; font-weight: 700; color: var(--ink); border-radius: 4px; }
   .flow-node.milo { background: var(--purple); color: var(--cream); border-color: var(--dark); }
-  .flow-node.sandbox { background: var(--cyan); color: var(--dark); border-color: var(--dark); }
+  .flow-node.accent { background: var(--cyan); color: var(--dark); border-color: var(--dark); }
   .flow-arrow { color: var(--purple); font-weight: 900; font-size: 16px; }
 
   .compliance {
@@ -483,10 +483,10 @@
       <div>
         <h4>Salesforce: plug-and-play on our side</h4>
         <p>
-          We've spoken to <strong>Philip (our CTO)</strong>. Salesforce sandbox is standard for us — read-only
+          We've spoken to <strong>Philip (our CTO)</strong>. Salesforce is plug-and-play for us — read-only
           OAuth connection, your production environment is never touched.
         </p>
-        <div class="sub">You spin up the sandbox. We connect same day.</div>
+        <div class="sub">Share access. We connect same day.</div>
       </div>
     </div>
     <div class="conf-card">
@@ -642,12 +642,12 @@
     <div class="arch-grid">
       <div class="acard reveal">
         <h4>Phase 1: Salesforce + MetaMask</h4>
-        <p>Start here. Both are ready to connect now. Salesforce via sandbox OAuth, MetaMask via the existing API.
+        <p>Start here. Both are ready to connect now. Salesforce via OAuth, MetaMask via the existing API.
           Philip's team handles the integration — expect half a day to set up.</p>
         <div class="flow">
-          <span class="flow-node">Salesforce sandbox</span>
+          <span class="flow-node">Salesforce</span>
           <span class="flow-arrow">+</span>
-          <span class="flow-node sandbox">MetaMask API</span>
+          <span class="flow-node accent">MetaMask API</span>
           <span class="flow-arrow">→</span>
           <span class="flow-node milo">Milo</span>
         </div>
@@ -660,7 +660,7 @@
         <div class="flow">
           <span class="flow-node">Finance · HR · Wallets</span>
           <span class="flow-arrow">+</span>
-          <span class="flow-node sandbox">Slack · TG · WA</span>
+          <span class="flow-node accent">Slack · TG · WA</span>
           <span class="flow-arrow">→</span>
           <span class="flow-node milo">Milo</span>
         </div>
@@ -708,7 +708,7 @@
         <h5>Trial</h5>
         <div class="big">Free <small>· 7 days</small></div>
         <ul>
-          <li>Salesforce sandbox only</li>
+          <li>Salesforce only</li>
           <li>Run the queries above</li>
           <li>No commitment, no fee</li>
           <li>Unlimited queries during trial</li>
@@ -743,7 +743,7 @@
         <h4>7-day trial</h4>
         <div class="price">Free <small>· 7 days</small></div>
         <ul>
-          <li>Salesforce sandbox · plug-and-play</li>
+          <li>Salesforce · plug-and-play</li>
           <li>8 agreed queries, run with you</li>
           <li>NDA both ways</li>
           <li>No fee, no commitment</li>
